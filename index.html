@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#" class="logo-link">
+                    <img src="assets/images/logo.png" alt="Pokemon Logo" class="logo-image">
+                </a>
+            </div>
+            <div class="search-box">
+                <button type="submit" class="search-btn">
+                    <img src="assets/images/search.svg" alt="Search button">
+                </button>
+                <input type="search" name="search" id="search" class="search-input" placeholder="Buscar seu Pokemon">
+            </div>
+        </div>
+    </header>
+    <section class="filter-section">
+        <div class="container">
+            <h2 class="filter-section-title">Pokemons</h2>
+            <ul class="filter-list">
+                <li class="filter-item filter-item-active">
+                    <button type="submit" class="filter-btn" data-pokemon-type-name="all">
+                        All
+                    </button>
+                </li>
+                <li class="filter-item">
+                    <button type="submit" class="filter-btn" data-pokemon-type-name="normal">
+                        Normal
+                    </button>
+                </li>
+                <li class="filter-item">
+                    <button type="submit" class="filter-btn" data-pokemon-type-name="fire">
+                        Fire
+                    </button>
+                </li>
+                <li class="filter-item">
+                    <button type="submit" class="filter-btn" data-pokemon-type-name="electric">
+                        Electric
+                    </button>
+                </li>
+                <li class="filter-item">
+                    <button type="submit" class="filter-btn" data-pokemon-type-name="water">
+                        Water
+                    </button>
+                </li>
+                <li class="filter-item">
+                    <button type="submit" class="filter-btn" data-pokemon-type-name="poison">
+                        Poison
+                    </button>
+                </li>
+                <li class="filter-item">
+                    <button type="submit" class="filter-btn" data-pokemon-type-name="grass">
+                        Grass
+                    </button>
+                </li>
+                <li class="filter-item">
+                    <button type="submit" class="filter-btn" data-pokemon-type-name="ground">
+                        Ground
+                    </button>
+                </li>
+                <li class="filter-item">
+                    <button type="submit" class="filter-btn" data-pokemon-type-name="fairy">
+                        Fairy
+                    </button>
+                </li>
+                <li class="filter-item">
+                    <button type="submit" class="filter-btn" data-pokemon-type-name="poison">
+                        Poison
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <main class="pokemons-container">
+        <div class="container">
+            <ul class="pokemons-list">
+            </ul>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
