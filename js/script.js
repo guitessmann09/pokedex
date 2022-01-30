@@ -97,26 +97,19 @@ function removeAllPokemons() {
 
 async function handleSearchInput(event, pokemons) {
   const pokemonNameSearch = event.target.value;
+  const currentPokemon = pokemons.find((pokemon) => pokemon.name === pokemonNameSearch.toLowerCase());
   if (!pokemonNameSearch) {
     populatePokemons(pokemons);
     removeAllPokemons();
-  } else {
-    const currentPokemon = pokemons.find((pokemon) => pokemon.name === pokemonNameSearch.toLowerCase());
-    if (currentPokemon) {
-      const currentPokemonData = await fetchPokemon(currentPokemon.url);
+  } else if (currentPokemon) {
+    const currentPokemonData = await fetchPokemon(currentPokemon.url);
 
-      if (currentPokemonData) {
-        removeAllPokemons();
-        insertPokemonHTML(currentPokemonData);
-      }
-    } else {
+    if (currentPokemonData) {
       removeAllPokemons();
-      const invalidPokemon = document.querySelector("main");
-      invalidPokemon.innerHTML = "Pokemon Inválido"
+      insertPokemonHTML(currentPokemonData);
     }
   }
 }
-
 function initSearchFunction(pokemons) {
   const searchInput = document.querySelector("#search");
   searchInput.addEventListener(
