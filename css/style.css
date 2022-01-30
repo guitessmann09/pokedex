@@ -147,7 +147,6 @@ body {
   background-color: #56ccf2;
 }
 
-
 .pokemon-card-info {
   display: flex;
   align-items: center;
@@ -170,7 +169,7 @@ body {
   text-transform: capitalize;
   display: block;
   border: 1px solid #f2f2f2;
-  color: #F2F2F2;
+  color: #f2f2f2;
   box-sizing: border-box;
   border-radius: 50px;
   padding: 10px 20px;
@@ -227,7 +226,7 @@ body {
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 1282px){
+@media screen and (max-width: 1282px) {
   .pokemons-list {
     justify-content: center;
   }
