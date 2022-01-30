@@ -111,7 +111,6 @@ body {
   margin-right: 16px;
 }
 
-.filter-item-active > .filter-btn,
 .filter-btn:hover {
   color: #ffffff;
   border-color: #ffffff;
